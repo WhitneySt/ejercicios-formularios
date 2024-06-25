@@ -21,6 +21,7 @@
       <input
         type="email"
         id="email"
+        name="email"
         value=""
         placeholder="Ingrese su correo electrónico">
 
@@ -28,60 +29,63 @@
       <input
         type="password"
         id="password"
+        name="password"
         placeholder="Ingrese una contraseña" value="">
 
       <label for="telefono">Teléfono:</label>
       <input
         type="tel"
         id="telefono"
+        name="telefono"
         placeholder="Ingrese su número telefónico" value="">
 
       <label for="edad">Edad:</label>
       <input
         type="number"
         id="edad"
+        name="edad"
         min="1"
         max="100"
         placeholder="Ingrese su edad" value="">
 
       <label for="sitio">Sitio web:</label>
-      <input type="url" id="sitio" placeholder="Ingrese su sitio web" value="">
+      <input type="url" id="sitio" name="sitio" placeholder="Ingrese su sitio web" value="">
 
       <label for="color">Color favorito:</label>
-      <input type="color" id="color" value="#000000">
+      <input type="color" id="color" name="color" value="#000000">
 
       <label for="nacimiento">Fecha de nacimiento</label>
-      <input type="date" id="nacimiento" placeholder="Fecha de nacimiento" value="">
+      <input type="date" id="nacimiento" name="nacimiento" placeholder="Fecha de nacimiento" value="">
 
       <label for="fechaHora">Fecha y hora:</label>
-      <input type="datetime-local" id="fechaHora" value="">
+      <input type="datetime-local" id="fechaHora" name="fechaHora" value="">
 
       <label for="mes">Mes y año: </label>
-      <input type="month" id="mes" value="">
+      <input type="month" id="mes" name="mes" value="">
 
       <label for="semana">Semana y año:</label>
-      <input type="week" id="semana" value="">
+      <input type="week" id="semana" name="semana" value="">
 
       <label for="hora">Hora:</label>
-      <input type="time" name="hora" id="hora" value="">
+      <input type="time" name="hora" id="hora" name="hora" value="">
 
       <label for="volumen">Volumen</label>
-      <input type="range" id="volumen" min="0" max="100" step="10" value="">
+      <input type="range" id="volumen" name="volumen" min="0" max="100" step="10" value="">
 
       <label for="aceptarTerminos">Acepto los términos</label>
-      <input type="checkbox" id="aceptarTerminos">
+      <input type="checkbox" name="aceptarTerminos" id="aceptarTerminos">
 
       <label>Género:</label>
 
-      <input type="radio" id="masculino" value="masculino">
+      <input type="radio" id="masculino" name="genero" value="masculino">
       <label for="masculino">Masculino</label>
-      <input type="radio" id="femenino" value="femenino">
+      <input type="radio" id="femenino" name="genero" value="femenino">
       <label for="femenino">Femenino</label>
-      <input type="radio" id="otros" value="otros">
+      <input type="radio" id="otros" name="genero" value="otros">
       <label for="otros">Otros</label>
 
       <label for="archivo">Subir Archivo:</label>
-      <input type="file" id="archivo">
+      <input type="file" id="archivo" name="archivo">
 
       <input type="hidden" id="token" name="token" value="123456">
 

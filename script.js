@@ -50,10 +50,22 @@ const obtenerDatosDeFormularios = (formulario) => {
   return dataForm;
 };
 
+function obtenerDatosFormulario(formulario) {
+  const datosFormulario = {};
+  const dataForm = new FormData(formulario);
+  console.log(dataForm);
+  for (const [nombrePropiedad, valorPropiedad] of dataForm.entries()) {
+    datosFormulario[nombrePropiedad] = valorPropiedad;
+  }
+
+  return datosFormulario;
+}
+
 formulario.addEventListener("submit", (evento) => {
   evento.preventDefault(); //Evitamos que suceda la acción que viene por defecto en el submit: La recarga de la página
   // console.log(evento);
   // console.log(formulario.children);
-  const datos = obtenerDatosDeFormularios(formulario);
+  //   const datos = obtenerDatosDeFormularios(formulario);
+  const datos = obtenerDatosFormulario(formulario);
   console.log(datos);
 });
